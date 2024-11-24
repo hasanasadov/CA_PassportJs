@@ -69,7 +69,7 @@ const forgotPassword = async (req, res) => {
     await user.save();
 
     await transporter.sendMail({
-      from: '"Passport auth 👻" <muradni@code.edu.az>', // sender address
+      from: '"Passport auth 👻" <hasanaliaa@code.edu.az>', // sender address
       to: user.email, // list of receivers
       subject: "Reset your password", // Subject line
       html: `
@@ -133,7 +133,7 @@ const forgotPassword = async (req, res) => {
           <div class="email-body">
             <p>Hi, ${user.name}</p>
             <p>We received a request to reset your password. You can reset your password by clicking the link below:</p>
-            <a href="http://example.com/reset-password/${token}" class="button">Reset Password</a>
+            <a href="http://hasanali.site/reset-password/${token}" class="button">Reset Password</a>
             <p>If you did not request a password reset, please ignore this email.</p>
           </div>
 
